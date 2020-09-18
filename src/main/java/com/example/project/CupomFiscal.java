@@ -15,8 +15,20 @@ public class CupomFiscal {
 	public static String CNPJ = "42.591.651/0797-34";
 	public static String INSCRICAO_ESTADUAL = "244.898.500.113";
 
+
+	private static String QUEBRA_LINHA = System.lineSeparator();
+
 	public static void main(final String[] args) {
 		//Implemente aqui
+		String cupom_fiscal = NOME_LOJA + QUEBRA_LINHA;
+		cupom_fiscal += LOGRADOURO + ", " + NUMERO + " " + COMPLEMENTO + QUEBRA_LINHA;
+		cupom_fiscal += BAIRRO + " - " + MUNICIPIO + " - " + ESTADO + QUEBRA_LINHA;
+		cupom_fiscal += "CEP:" + CEP + " " + "Tel " + TELEFONE + QUEBRA_LINHA;
+		cupom_fiscal += OBSERVACAO + QUEBRA_LINHA;
+		cupom_fiscal += "CNPJ: " + CNPJ + QUEBRA_LINHA;
+		cupom_fiscal += "IE: " + INSCRICAO_ESTADUAL;
+
+		System.out.println(cupom_fiscal);
 	}
 
 }

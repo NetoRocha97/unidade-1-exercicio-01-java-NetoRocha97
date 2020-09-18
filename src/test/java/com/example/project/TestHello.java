@@ -19,6 +19,7 @@ public class TestHello {
 				"Loja 1317 (PDP)" + BREAK + 
 				"CNPJ: 42.591.651/0797-34" + BREAK + 
 				"IE: 244.898.500.113" + BREAK);
+				
 	}
 
 	private void rodarTestarOutput(String expected) {
